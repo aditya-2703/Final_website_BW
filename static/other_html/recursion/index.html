@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back-tracking</title>
+    <link rel="stylesheet" href="/static/other_css/recursion/index.css">
+    <link rel="icon" type="image/gif" sizes="128x128" href="/static/other_img/recursion/logo.png">
+</head>
+<body>
+    <div class="container">
+            <nav class="nav_header">
+                <button class="level" id="easy" onclick="choosen_level_list(this)"><div class="level_text">Easy</div>            
+                </button>
+                <button class="level" id="medium" onclick="choosen_level_list(this)"><div class="level_text">Medium</div>
+                </button>
+                <button class="level" id="hard"  onclick="choosen_level_list(this)"><div class="level_text">Hard</div>
+                </button>
+        
+            </nav>
+            <div class="big_heading">
+                sudoku
+            </div>
+            <div class="start_button" onclick="start()">
+                Start
+            </div>
+            <div class="suduko_board">
+    
+            </div>
+            <div class="game_end_display">
+                
+            </div>
+            <div class="submit">
+                <button onclick="submit_game()">submit</button>
+            </div>
+            <div class="number_box">
+                
+                <!-- <div class="container_1"> -->
+                    <button class="n clicked" onclick="number_selection_action(this)">1</button>
+                    <button class="n clicked" onclick="number_selection_action(this)">2</button>
+                    <button class="n clicked" onclick="number_selection_action(this)">3</button>
+                    <button class="n clicked" onclick="number_selection_action(this)">4</button>
+                    <button class="n clicked" onclick="number_selection_action(this)">5</button>
+                    <button class="n clicked" onclick="number_selection_action(this)">6</button>
+                    <button class="n clicked" onclick="number_selection_action(this)">7</button>
+                    <button class="n clicked" onclick="number_selection_action(this)">8</button>
+                    <button class="n clicked" onclick="number_selection_action(this)">9</button>
+                    <!-- </div> -->
+                    <!-- <div class="container_2"> -->
+                <!-- </div> -->
+                <!-- <div class="container_3"> -->
+                <!-- </div> -->
+    
+            </div>
+    </div>
+</body>
+<script src="/static/other_js/recursion/index.js"></script>
+</html>

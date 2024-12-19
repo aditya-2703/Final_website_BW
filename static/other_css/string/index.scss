@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    // margin: 0;
+    // padding:0 ;
+    // overflow: hidden;
+
+    body{
+        
+        position: relative;
+        // background: url("/static/other_img/string/bg1.png");
+        // background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 100%;
+
+        .container{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            margin-top: 102px;
+
+
+            .correct{
+                color: green;
+            }
+            .mistake{
+                color: red;
+            }
+            .inbuild_cont{
+                
+                border:1px solid black;
+                width: 1200px;
+                padding: 10px;
+
+                // background: rgba(255, 255, 255, 0.58);
+                // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);                
+                border-radius: 10px;
+                font-family: "Roboto";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 2em;
+                // line-height: 39px;
+                text-align: center;
+                
+                // word-break:break-all;
+                // white-space: nowrap;
+                display: flex;
+                flex-wrap: wrap;
+                // flex-direction: row;
+
+                color: #000000;                
+                // display: inline-flex;
+                
+                // .single_char{
+                    
+                //     font-style: normal;
+                //     font-weight: normal;
+                //     font-size: 31px;
+                //     line-height: 39px;
+
+                //     word-wrap:break-word;
+                //     white-space: inherit;
+                // }
+                
+            }
+
+            .input_field{
+                
+                display: flex;
+                margin-top: 60px;
+                flex-direction: row;
+                align-items: center;
+                width: 80%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                .typed_input_cont{
+                    position: relative;
+                    width: 80%;
+                    
+                    border-bottom-left-radius: 10px;
+                    border-top-left-radius: 10px;
+                    
+                    
+                    font-family: "Roboto";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 3em;
+                    line-height: 69px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    border: 4px solid black;
+                    // background: rgba(0,0,0,0.23);
+                    // box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.3);                    
+                    // color: #FFFFFF;
+
+                }
+                .timer{
+                    position: relative;
+                    width: 20%;
+                    border: 4px solid black;
+                    // background: rgba(0,0,0,0.23);
+                    // box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.3);                    
+                    font-family: "Roboto";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 3em;
+                    line-height: 69px;
+                    text-align: center;
+                    
+                    color: whitesmoke;
+                                        
+                    
+                    background: #36454F;                    
+                }
+                
+            }
+
+            .button{
+                margin: 30px;
+                width:  246px;
+                height: 80px;
+                
+                background: #36454F;                    
+
+                border: 5px solid black;
+                box-sizing: border-box;
+                // border-radius: 20px;
+                // box-shadow: 0px 0px 8px white;        
+                
+                font-family: "Roboto";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 3em;
+                line-height: 86px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                color: white;
+                cursor: pointer;
+                                
+            }
+            .restart_game{
+                margin: 10px;
+                margin-top: -100px;
+                font-size: 3em;
+            }
+
+            .result_cont{
+                display: none;
+              
+                // position: absolute;
+                margin-top: 40px;
+                width: 500px;
+                height: 300px;
+                // left: 613px;
+                // top: 574px;
+                
+                // background: #000000;                
+                border:2px solid black;
+                .heading{
+                    // position: absolute;
+                    // width: 673px;
+                    // height: 109px;
+                    // left: 612px;
+                    // top: 574px;
+                    
+                    font-family: "Roboto";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 3em;
+                    line-height: 86px;
+                    text-align: center;
+
+                    color: #000000;
+                    
+                    background: #36454F;
+                }
+                ul{
+                    // margin-top: 30px;
+                    li{
+                        list-style-type: none;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 2em;
+                        line-height: 52px;
+                        // display: flex;
+                        // margin-left:70px;
+                        // color: #000000;  
+                        text-align: center;  
+                        h1{
+                            display: inline;
+                            font-size: 2em;
+                            margin-left: 10px;
+                            
+                        }
+                        
+                        #wpm{
+                            font-size: 1em;
+                            font-weight: bolder;
+                        }
+                        #result_currect_word{
+                            color:green;
+                            font-size: 1em;
+                        }
+                        #result_wrong_word{
+                            color:red;
+                            font-size: 1em;
+
+                        }
+                    }
+                    .wpm{
+                        font-size: 3.5em;
+                        font-weight: bolder;
+                        color: black;
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+    body{
+
+        font-size: 55%;
+
+        .container{
+
+            margin-top: 55px;
+            
+
+            .inbuild_cont{
+                
+                width: 90%;
+
+                font-size: 3em;
+              
+                
+            }
+
+            
+            .input_field{
+                
+                display: flex;
+                margin-top: 60px;
+                width: 80%;
+                height: 40%;
+
+                .typed_input_cont{
+                    position: relative;
+                    width: 80%;
+                    // height: 40%;
+                    
+                    border-bottom-left-radius: 10px;
+                    border-top-left-radius: 10px;
+                    
+                    
+                    font-size: 3em;
+                    // color: #FFFFFF;
+
+                }
+                .timer{
+                    position: relative;
+                    width: 20%;
+                    // height: 40%;
+                    font-size: 3em;
+                    
+                                        
+                }
+                
+            }
+
+            .button{
+                // margin: 30px;
+                width:  20%;
+                
+                font-size:4em;
+                letter-spacing: 0.1em;                          
+                                
+            }
+            .restart_game{
+                margin: 10px;
+                margin-top: 10px;
+                font-size: 2em;
+            }
+
+            .result_cont{
+                display: none;
+                
+                // position: absolute;
+                margin-top: 40px;
+                width: 50%;
+                height: 30%;
+                // left: 613px;
+                // top: 574px;
+                                
+            
+                .heading{
+                    // position: absolute;
+                    // width: 673px;
+                    // height: 109px;
+                    // left: 612px;
+                    // top: 574px;
+                    
+                    font-family: "Roboto";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size:  3em;
+                    text-align: center;
+                }
+                ul{
+                    margin-top: 3%;
+                    li{
+                        list-style-type: none;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 3em;
+                        // display: flex;
+                        // margin-left:70px;
+                        // color: #000000;  
+                        text-align: center;  
+                        h1{
+                            display: inline;
+                            font-size: 3em;
+                            margin-left: 10px;
+                            
+                        }
+                        
+                        #wpm{
+                            font-weight: bolder;
+                            font-size: 2em;
+                        }
+                        #result_currect_word{
+                            color:green;
+                            font-size: 2em;
+                        }
+                        #result_wrong_word{
+                            color:red;
+                            font-size: 2em;
+                        }
+                    }
+                    .wpm{
+                        font-size: 3em;
+                        font-weight: bolder;
+                        color: black;
+                    }
+                }
+            }
+
+        }
+    }
+    
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    body{
+        font-size: 35%;
+
+    }
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+    body{
+        font-size: 35%;
+
+    }
+}

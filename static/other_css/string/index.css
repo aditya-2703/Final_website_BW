@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* body {
+  position: relative;
+  background-repeat: no-repeat;
+  font-size: 100%;
+}
+* body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 102px;
+}
+* body .container .correct {
+  color: green;
+}
+* body .container .mistake {
+  color: red;
+}
+* body .container .inbuild_cont {
+  border: 1px solid black;
+  width: 1200px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  color: #000000;
+}
+* body .container .input_field {
+  display: flex;
+  margin-top: 60px;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+* body .container .input_field .typed_input_cont {
+  position: relative;
+  width: 80%;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3em;
+  line-height: 69px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 4px solid black;
+}
+* body .container .input_field .timer {
+  position: relative;
+  width: 20%;
+  border: 4px solid black;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3em;
+  line-height: 69px;
+  text-align: center;
+  color: whitesmoke;
+  background: #36454F;
+}
+* body .container .button {
+  margin: 30px;
+  width: 246px;
+  height: 80px;
+  background: #36454F;
+  border: 5px solid black;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3em;
+  line-height: 86px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+* body .container .restart_game {
+  margin: 10px;
+  margin-top: -100px;
+  font-size: 3em;
+}
+* body .container .result_cont {
+  display: none;
+  margin-top: 40px;
+  width: 500px;
+  height: 300px;
+  border: 2px solid black;
+}
+* body .container .result_cont .heading {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3em;
+  line-height: 86px;
+  text-align: center;
+  color: #000000;
+  background: #36454F;
+}
+* body .container .result_cont ul li {
+  list-style-type: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  line-height: 52px;
+  text-align: center;
+}
+* body .container .result_cont ul li h1 {
+  display: inline;
+  font-size: 2em;
+  margin-left: 10px;
+}
+* body .container .result_cont ul li #wpm {
+  font-size: 1em;
+  font-weight: bolder;
+}
+* body .container .result_cont ul li #result_currect_word {
+  color: green;
+  font-size: 1em;
+}
+* body .container .result_cont ul li #result_wrong_word {
+  color: red;
+  font-size: 1em;
+}
+* body .container .result_cont ul .wpm {
+  font-size: 3.5em;
+  font-weight: bolder;
+  color: black;
+}
+
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  body {
+    font-size: 55%;
+  }
+  body .container {
+    margin-top: 55px;
+  }
+  body .container .inbuild_cont {
+    width: 90%;
+    font-size: 3em;
+  }
+  body .container .input_field {
+    display: flex;
+    margin-top: 60px;
+    width: 80%;
+    height: 40%;
+  }
+  body .container .input_field .typed_input_cont {
+    position: relative;
+    width: 80%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 3em;
+  }
+  body .container .input_field .timer {
+    position: relative;
+    width: 20%;
+    font-size: 3em;
+  }
+  body .container .button {
+    width: 20%;
+    font-size: 4em;
+    letter-spacing: 0.1em;
+  }
+  body .container .restart_game {
+    margin: 10px;
+    margin-top: 10px;
+    font-size: 2em;
+  }
+  body .container .result_cont {
+    display: none;
+    margin-top: 40px;
+    width: 50%;
+    height: 30%;
+  }
+  body .container .result_cont .heading {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3em;
+    text-align: center;
+  }
+  body .container .result_cont ul {
+    margin-top: 3%;
+  }
+  body .container .result_cont ul li {
+    list-style-type: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3em;
+    text-align: center;
+  }
+  body .container .result_cont ul li h1 {
+    display: inline;
+    font-size: 3em;
+    margin-left: 10px;
+  }
+  body .container .result_cont ul li #wpm {
+    font-weight: bolder;
+    font-size: 2em;
+  }
+  body .container .result_cont ul li #result_currect_word {
+    color: green;
+    font-size: 2em;
+  }
+  body .container .result_cont ul li #result_wrong_word {
+    color: red;
+    font-size: 2em;
+  }
+  body .container .result_cont ul .wpm {
+    font-size: 3em;
+    font-weight: bolder;
+    color: black;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  body {
+    font-size: 35%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  body {
+    font-size: 35%;
+  }
+}/*# sourceMappingURL=index.css.map */
