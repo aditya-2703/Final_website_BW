@@ -305,6 +305,17 @@ let obj_arr = [
         </iframe>`
 
     },
+    {
+      name: "Graph Games",
+      desc: "Graph",
+      img: "graph.png",
+      project_url: "/static/other_html/graph/index.html",
+      about_url: "https://github.com/aditya-2703/DSA-HUB/tree/main/GRAPH",
+      code_url: "https://github.com/aditya-2703/DSA-HUB/tree/main/GRAPH",
+      info_desc: "Graph Games is an app showcasing two projects based on graph data structures: Pathfinding Game using DFS and Sliding Puzzle using BFS. The Pathfinding Game demonstrates how DFS explores nodes deeply to find a path in a graph, while the Sliding Puzzle uses BFS to solve puzzles by finding the shortest solution through level-by-level exploration. This app offers an interactive way to visualize and understand these graph traversal algorithms.",
+      link: ``
+
+  },
 
 ]
 
